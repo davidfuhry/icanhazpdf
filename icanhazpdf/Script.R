@@ -134,3 +134,5 @@ tweets[which(grepl("slidesearch.org", tweets$source)),]$id
 
 kek1 <- tweets[which(tweets$created_at == "2017-09-20 GMT"),]
 kek1 <- kek1[, c("text", "id_str")]
+
+llala
