@@ -126,13 +126,3 @@ ggplot(langs, aes(x = "", y = Freq, fill = Language)) + geom_bar(width = 1, stat
 length(tweets$place$country[!(is.na(tweets$place$country))])
 
 length(tweets$user$location[!(is.na(tweets$user$location))])
-
-
-
-tweets[which(grepl("slidesearch.org", tweets$source)),]$id
-
-
-kek1 <- tweets[which(tweets$created_at == "2017-09-20 GMT"),]
-kek1 <- kek1[, c("text", "id_str")]
-
-llala
