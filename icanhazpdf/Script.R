@@ -120,9 +120,3 @@ names(otherlangs) <- c("Freq", "Language")
 langs <- rbind(langs[langs$Freq >= 30,], otherlangs)
 
 ggplot(langs, aes(x = "", y = Freq, fill = Language)) + geom_bar(width = 1, stat = "identity") + coord_polar("y", start = 0) + ylab("") + xlab("")
-
-# Location querys
-
-length(tweets$place$country[!(is.na(tweets$place$country))])
-
-length(tweets$user$location[!(is.na(tweets$user$location))])
